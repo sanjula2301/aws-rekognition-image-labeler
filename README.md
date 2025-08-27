@@ -1,4 +1,4 @@
-# 🌿 Tranquil Garden Retreat – AWS Rekognition Project  
+#  AWS Rekognition Project  
 
 This project demonstrates how to build an **image recognition pipeline** using **AWS Rekognition**, **S3**, and **Python (Boto3)**.  
 It showcases the ability to detect objects, labels, and scenes from uploaded images stored in an S3 bucket.  
@@ -71,7 +71,7 @@ AWS Secret Access Key
 
 Default region (e.g., ap-south-1)
 
-📌 Usage
+## Usage
 Upload Images to S3
 
 bash
@@ -88,7 +88,7 @@ Labels in results/labels.csv
 
 JSON output in results/labels.json
 
-📊 Sample Output
+## Sample Output
 Example detection from AWS Rekognition:
 
 json
@@ -107,7 +107,7 @@ Copy code
     "Confidence": 88.4
   }
 ]
-🌟 Why This Project is Valuable
+## Why This Project is Valuable
 Great example of cloud computing + AI integration
 
 Demonstrates hands-on AWS skills (S3, Rekognition, IAM, encryption)
