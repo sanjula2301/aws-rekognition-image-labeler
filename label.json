@@ -1,0 +1,150 @@
+{
+    "Labels": [
+        {
+            "Name": "Backyard",
+            "Confidence": 99.99998474121094,
+            "Instances": [],
+            "Parents": [
+                { "Name": "Nature" },
+                { "Name": "Outdoors" },
+                { "Name": "Yard" }
+            ],
+            "Aliases": [],
+            "Categories": [
+                { "Name": "Home and Indoors" }
+            ]
+        },
+        {
+            "Name": "Nature",
+            "Confidence": 99.99998474121094,
+            "Instances": [],
+            "Parents": [
+                { "Name": "Outdoors" }
+            ],
+            "Aliases": [],
+            "Categories": [
+                { "Name": "Nature and Outdoors" }
+            ]
+        },
+        {
+            "Name": "Outdoors",
+            "Confidence": 99.99998474121094,
+            "Instances": [],
+            "Parents": [],
+            "Aliases": [],
+            "Categories": [
+                { "Name": "Nature and Outdoors" }
+            ]
+        },
+        {
+            "Name": "Yard",
+            "Confidence": 99.99998474121094,
+            "Instances": [],
+            "Parents": [
+                { "Name": "Nature" },
+                { "Name": "Outdoors" }
+            ],
+            "Aliases": [],
+            "Categories": [
+                { "Name": "Home and Indoors" }
+            ]
+        },
+        {
+            "Name": "Garden",
+            "Confidence": 99.99974822998047,
+            "Instances": [],
+            "Parents": [
+                { "Name": "Nature" },
+                { "Name": "Outdoors" }
+            ],
+            "Aliases": [],
+            "Categories": [
+                { "Name": "Nature and Outdoors" }
+            ]
+        },
+        {
+            "Name": "Grass",
+            "Confidence": 99.9858169555664,
+            "Instances": [],
+            "Parents": [
+                { "Name": "Plant" }
+            ],
+            "Aliases": [],
+            "Categories": [
+                { "Name": "Plants and Flowers" }
+            ]
+        },
+        {
+            "Name": "Potted Plant",
+            "Confidence": 99.62391662597656,
+            "Instances": [],
+            "Parents": [
+                { "Name": "Plant" }
+            ],
+            "Aliases": [],
+            "Categories": [
+                { "Name": "Home and Indoors" }
+            ]
+        },
+        {
+            "Name": "Bench",
+            "Confidence": 98.56210327148438,
+            "Instances": [
+                {
+                    "BoundingBox": {
+                        "Width": 0.2067091017961502,
+                        "Height": 0.23707520961761475,
+                        "Left": 0.10163337737321854,
+                        "Top": 0.5290547013282776
+                    },
+                    "Confidence": 97.06747436523438
+                }
+            ],
+            "Parents": [
+                { "Name": "Furniture" }
+            ],
+            "Aliases": [],
+            "Categories": [
+                { "Name": "Furniture and Furnishings" }
+            ]
+        },
+        {
+            "Name": "Dog",
+            "Confidence": 98.28343200683594,
+            "Instances": [
+                {
+                    "BoundingBox": {
+                        "Width": 0.2120484560728073,
+                        "Height": 0.14790844917297363,
+                        "Left": 0.05999463424086571,
+                        "Top": 0.7425461411476135
+                    },
+                    "Confidence": 98.28343200683594
+                }
+            ],
+            "Parents": [
+                { "Name": "Animal" },
+                { "Name": "Canine" },
+                { "Name": "Mammal" },
+                { "Name": "Pet" }
+            ],
+            "Aliases": [],
+            "Categories": [
+                { "Name": "Animals and Pets" }
+            ]
+        },
+        {
+            "Name": "Walkway",
+            "Confidence": 98.2014389038086,
+            "Instances": [],
+            "Parents": [
+                { "Name": "Path" }
+            ],
+            "Aliases": [],
+            "Categories": [
+                { "Name": "Transport and Logistics" }
+            ]
+        }
+    ],
+    "LabelModelVersion": "3.0"
+}
