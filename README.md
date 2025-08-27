@@ -1,99 +1,119 @@
-# AWS Rekognition Project  
 
-This project demonstrates how to build an **image recognition pipeline** using **AWS Rekognition**, **S3**, and **Python (Boto3)**.  
-It showcases the ability to detect objects, labels, and scenes from uploaded images stored in an S3 bucket.  
+## An AWS Rekognition Project
 
----
+This project demonstrates how to build an automated image recognition pipeline using **AWS Rekognition**, **S3**, and **Python (Boto3)**. It showcases the ability to detect objects, labels, and scenes from images uploaded to an S3 bucket.
 
-## 🚀 Features  
+-----
 
-- 📂 **Upload Images to S3** – Store images securely in an AWS S3 bucket.  
-- 🖼 **Automated Label Detection** – Extract objects, categories, and scenes with AWS Rekognition.  
-- 📊 **Results in CSV/JSON** – Store detection results for further analysis.  
-- ⚡ **Serverless & Scalable** – Can be extended with AWS Lambda for automation.  
-- 🔒 **Bucket Encryption** – S3 bucket secured with AES-256 encryption.  
 
----
+## 🚀 Features
 
-## 🛠 Tech Stack  
+  - 📂 **Upload Images to S3**: Store images securely and durably in an AWS S3 bucket.
+  - 🖼️ **Automated Label Detection**: Extract objects, categories, and scenes automatically with AWS Rekognition.
+  - 📊 **Results in CSV/JSON**: Store detection results in structured formats for further analysis.
+  - ⚡ **Serverless & Scalable**: Designed to be easily extended with AWS Lambda for a fully automated, serverless workflow.
+  - 🔒 **Bucket Encryption**: S3 bucket is secured with AES-256 encryption by default.
 
-- **AWS S3** – Image storage  
-- **AWS Rekognition** – Image labeling & detection  
-- **Boto3 (Python SDK)** – AWS interaction  
-- **Pandas** – Data handling (CSV/JSON export)  
-- **Jupyter Notebook / Python scripts** – Implementation  
+-----
 
----
+## 🛠 Tech Stack
 
-## 📂 Project Structure  
+  - **AWS S3**: For scalable object storage.
+  - **AWS Rekognition**: For AI-powered image analysis.
+  - **Boto3 (Python SDK)**: To interact with AWS services programmatically.
+  - **Pandas**: For easy data handling and exporting results to CSV/JSON.
+  - **Jupyter Notebook / Python**: For implementation and scripting.
 
+-----
+
+## 📂 Project Structure
+
+```
 Tranquil-Garden-Retreat/
-│── label_images.py # Helper functions for Rekognition & S3
-│── analyze_images.py # Main script for image analysis
-│── requirements.txt # Python dependencies
-│── README.md # Project documentation
-│── results/
-│ ├── labels.csv # Exported Rekognition results
-│ └── labels.json # JSON format of results
+│
+├── label_images.py         # Helper functions for Rekognition & S3
+├── analyze_images.py       # Main script for image analysis
+├── requirements.txt        # Python dependencies
+├── README.md               # Project documentation
+│
+└── results/
+    ├── labels.csv          # Exported Rekognition results
+    └── labels.json         # JSON format of results
+```
 
-yaml
-Copy code
+-----
 
----
+## ⚙️ Installation & Setup
 
-## ⚙️ Installation & Setup  
+1.  **Clone the Repository**
 
-1. **Clone the Repository**  
-   ```bash
-   git clone https://github.com/<your-username>/Tranquil-Garden-Retreat.git
-   cd Tranquil-Garden-Retreat
-Create a Virtual Environment (Optional but Recommended)
+    ```bash
+    git clone https://github.com/<your-username>/aws-rekognition-image-labeler.git
+    cd aws-rekognition-image-labeler
+    ```
 
-bash
-Copy code
-python -m venv venv
-source venv/bin/activate   # For Linux/Mac
-venv\Scripts\activate      # For Windows
-Install Dependencies
+2.  **Create a Virtual Environment** (Optional but Recommended)
 
-bash
-Copy code
-pip install -r requirements.txt
-Configure AWS CLI
+    ```bash
+    # For Linux/Mac
+    python -m venv venv
+    source venv/bin/activate
 
-bash
-Copy code
-aws configure
-Provide:
+    # For Windows
+    python -m venv venv
+    venv\Scripts\activate
+    ```
 
-AWS Access Key ID
+3.  **Install Dependencies**
 
-AWS Secret Access Key
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Default region (e.g., ap-south-1)
+4.  **Configure AWS CLI**
+    If you haven't already, configure your AWS credentials.
 
-📌 Usage
-Upload Images to S3
+    ```bash
+    aws configure
+    ```
 
-bash
-Copy code
-aws s3 cp ./images/ s3://my-rekognition-lab-xxxx/ --recursive
-Run Image Labeling Script
+    You will be prompted to provide:
 
-bash
-Copy code
-python analyze_images.py
-View Results
+      - `AWS Access Key ID`
+      - `AWS Secret Access Key`
+      - `Default region` (e.g., `ap-south-1`)
+      - `Default output format` (e.g., `json`)
 
-Labels in results/labels.csv
+-----
 
-JSON output in results/labels.json
+## 📌 Usage
 
-📊 Sample Output
-Example detection from AWS Rekognition:
+1.  **Upload Images to S3**
+    Replace `my-rekognition-lab-xxxx` with your unique S3 bucket name.
 
-json
-Copy code
+    ```bash
+    aws s3 cp ./images/ s3://my-rekognition-lab-xxxx/ --recursive
+    ```
+
+2.  **Run Image Labeling Script**
+    Execute the main analysis script.
+
+    ```bash
+    python analyze_images.py
+    ```
+
+3.  **View Results**
+    The script will generate the analysis results in the `results/` directory:
+
+      - **JSON**: `results/labels.json`
+
+-----
+
+## 📊 Sample Output
+
+Here is an example of the JSON output from AWS Rekognition for a single image:
+
+```json
 [
   {
     "Name": "Garden",
@@ -108,24 +128,13 @@ Copy code
     "Confidence": 88.4
   }
 ]
-🌟 Why This Project is Valuable
-Great example of cloud computing + AI integration
+```
 
-Demonstrates hands-on AWS skills (S3, Rekognition, IAM, encryption)
 
-Strong showcase for software engineering interviews & LinkedIn portfolio
 
-Can be extended into real-world applications like:
+-----
 
-Security & surveillance
+## 📖 Future Improvements
 
-Automated tagging for e-commerce
-
-Smart agriculture image analysis
-
-📖 Future Improvements
-🔄 Automate pipeline with AWS Lambda & Step Functions
-
-📷 Extend to video analysis with Rekognition Video
-
-📌 Deploy results on a React/Flask web dashboard
+  - 🔄 **Automate Pipeline**: Integrate **AWS Lambda** and **Step Functions** to trigger analysis automatically on image upload.
+  - 🌐 **Web Dashboard**: Deploy the results on a **React** or **Flask** web dashboard for interactive visualization.
