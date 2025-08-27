@@ -5,18 +5,6 @@ This project demonstrates how to build an automated image recognition pipeline u
 
 -----
 
-## 📚 Table of Contents
-
-  - [🚀 Features](https://www.google.com/search?q=%23-features)
-  - [🛠 Tech Stack](https://www.google.com/search?q=%23-tech-stack)
-  - [📂 Project Structure](https://www.google.com/search?q=%23-project-structure)
-  - [⚙️ Installation & Setup](https://www.google.com/search?q=%23%EF%B8%8F-installation--setup)
-  - [📌 Usage](https://www.google.com/search?q=%23-usage)
-  - [📊 Sample Output](https://www.google.com/search?q=%23-sample-output)
-  - [🌟 Why This Project is Valuable](https://www.google.com/search?q=%23-why-this-project-is-valuable)
-  - [📖 Future Improvements](https://www.google.com/search?q=%23-future-improvements)
-
------
 
 ## 🚀 Features
 
